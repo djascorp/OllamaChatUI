@@ -1,7 +1,3 @@
-Bien sûr ! Voici un fichier `README.md` complet et professionnel pour le projet d'application de chat avec Next.js et Ollama. Il est rédigé en Markdown, prêt à être copié-collé dans votre dépôt GitHub.
-
----
-
 # Ollama Next.js Chat UI
 
 ![Langage](https://img.shields.io/badge/language-TypeScript-blue.svg)
@@ -55,8 +51,8 @@ Suivez ces étapes pour lancer l'application localement :
 
 1.  **Clonez le dépôt :**
     ```bash
-    git clone https://github.com/votre-nom-utilisateur/ollama-nextjs-chat-ui.git
-    cd ollama-nextjs-chat-ui
+    git clone https://github.com/djascorp/OllamaChatUI.git
+    cd OllamaChatUI
     ```
 
 2.  **Installez les dépendances :**
