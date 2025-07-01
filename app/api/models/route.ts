@@ -16,6 +16,8 @@ export async function GET() {
 
     const data: OllamaModelsResponse = await response.json();
     
+    console.log("DATA MODELS",data);
+
     return NextResponse.json({
       models: data.models || [],
     });
