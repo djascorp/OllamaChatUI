@@ -3,7 +3,8 @@ import { OllamaModelsResponse } from '@/lib/types';
 
 export async function GET() {
   try {
-    const response = await fetch('http://localhost:11434/api/tags', {
+    const ollamaApiBaseUrl = process.env.OLLAMA_API_BASE_URL || "http://localhost:11434";
+    const response = await fetch(`${ollamaApiBaseUrl}/api/tags`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

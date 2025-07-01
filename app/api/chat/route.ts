@@ -18,7 +18,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Forward the request to Ollama
-    const ollamaResponse = await fetch("http://localhost:11434/api/chat", {
+    const ollamaApiBaseUrl = process.env.OLLAMA_API_BASE_URL || "http://localhost:11434";
+    const ollamaResponse = await fetch(`${ollamaApiBaseUrl}/api/chat`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
